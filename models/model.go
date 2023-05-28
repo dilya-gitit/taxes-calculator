@@ -12,11 +12,11 @@ type Taxes struct {
 	Mrp          float64 `gorm:"column:mrp"`
 }
 
-// People model
-type People struct {
+// PersonType model
+type PersonType struct {
 	gorm.Model
 	SocialStatus string  `gorm:"primaryKey"`
 	IpnRate      float64 `gorm:"column:ipn_rate"`
-	OpvExempt    bool    `gorm:"column:opv_exempt"`
-	VosmsExempt  bool    `gorm:"column:vosms_exempt"`
+	OpvAdd       bool    `gorm:"column:opv_add"`
+	VosmsAdd     bool    `gorm:"column:vosms_add"`
 }
